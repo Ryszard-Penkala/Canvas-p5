@@ -9,6 +9,7 @@
 
 .canvas {
   width: 400px;
-  height: 800px;
+  height: 400px;
+  background-color: red;
 }
 /*# sourceMappingURL=style.css.map */
