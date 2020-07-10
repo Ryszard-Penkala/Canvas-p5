@@ -15,29 +15,13 @@
 
 .sketchbook__header{
     width: 100%;
-    padding: 10px;
+    padding: 20px 10px;
     background-color: var(--header-bg-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    .sketchbook__pickers{
-        display: flex;
-        align-items: center;
-    }
     .sketchbook__logo{
-        font-size: 36px;
-        font-weight: 700;
-        margin: 0 20px;
-    }
-    .pickers__text{
-        font-size: 20px;
-    }
-    .sketchbook__picker{
-        height: 20px;
-        width: 100px;
-        border: none;
-        font-size: 16px;
-        margin: 0 10px;
+        font-size: 26px;
     }
 }
 

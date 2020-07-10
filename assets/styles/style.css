@@ -1,3 +1,10 @@
+:root {
+  --header-bg-color: rgb(9, 192, 248);
+  --header-text-color: #000;
+  --button-bg-color: blue;
+  --button-text-color: #fff;
+}
+
 *,
 *::before,
 *::after {
@@ -7,8 +14,45 @@
           box-sizing: border-box;
 }
 
-.canvas {
-  width: 400px;
-  height: 800px;
+.sketchbook__header {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--header-bg-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sketchbook__header .sketchbook__pickers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sketchbook__header .sketchbook__logo {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0 20px;
+}
+
+.sketchbook__header .pickers__text {
+  font-size: 20px;
+}
+
+.sketchbook__header .sketchbook__picker {
+  height: 20px;
+  width: 100px;
+  border: none;
+  font-size: 16px;
+  margin: 0 10px;
 }
 /*# sourceMappingURL=style.css.map */
