@@ -1,11 +1,9 @@
-$button-bg-color : var(--button-bg-color);
 :root {
     --header-bg-color: rgb(9, 192, 248);
     --header-text-color: #000;
-    --button-bg-color: rgb(9, 9, 245);
+    --button-bg-color: blue;
     --button-text-color: #fff;
 }
-
 
 *,
 *::before,
@@ -40,26 +38,11 @@ $button-bg-color : var(--button-bg-color);
             border: none;
             font-size: 16px;
             margin: 0 10px;
-        }
+    }
     .sketchbook__buttons{
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        padding: 0 20px;
-        .sketchbook__button{
-            font-size: 18px;
-            font-weight: 500;
-            margin: 0 10px;
-            height: 30px;
-            width: 100px;
-            border: none;
-            background-color: var(--button-bg-color);
-            color: var(--button-text-color);
-            &:hover{
-                cursor: pointer;
-                background-color: darken($button-bg-color, 20%)
-            }
-        }
+        padding: 0 10px;
     }
 }
 

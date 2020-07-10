@@ -1,7 +1,7 @@
 :root {
   --header-bg-color: rgb(9, 192, 248);
   --header-text-color: #000;
-  --button-bg-color: blue;
+  --button-bg-color: rgb(9, 9, 245);
   --button-text-color: #fff;
 }
 
@@ -54,5 +54,34 @@
   border: none;
   font-size: 16px;
   margin: 0 10px;
+}
+
+.sketchbook__header .sketchbook__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 20px;
+}
+
+.sketchbook__header .sketchbook__buttons .sketchbook__button {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 10px;
+  height: 30px;
+  width: 100px;
+  border: none;
+  background-color: var(--button-bg-color);
+  color: var(--button-text-color);
+}
+
+.sketchbook__header .sketchbook__buttons .sketchbook__button:hover {
+  cursor: pointer;
+  background-color: #990000;
 }
 /*# sourceMappingURL=style.css.map */

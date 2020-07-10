@@ -1,9 +1,9 @@
-$button-bg-color : var(--button-bg-color);
 :root {
     --header-bg-color: rgb(9, 192, 248);
     --header-text-color: #000;
-    --button-bg-color: rgb(9, 9, 245);
+    --button-bg-color: blue;
     --button-text-color: #fff;
+    $button-bg-color : var(--button-bg-color);
 }
 
 
@@ -57,7 +57,7 @@ $button-bg-color : var(--button-bg-color);
             color: var(--button-text-color);
             &:hover{
                 cursor: pointer;
-                background-color: darken($button-bg-color, 20%)
+                background-color: darken($color: button-bg-color, $amount: 30)
             }
         }
     }

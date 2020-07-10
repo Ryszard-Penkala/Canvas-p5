@@ -57,7 +57,7 @@ $button-bg-color : var(--button-bg-color);
             color: var(--button-text-color);
             &:hover{
                 cursor: pointer;
-                background-color: darken($button-bg-color, 20%)
+                background-color: darken($button-bg-color, $amount: 20%);
             }
         }
     }
