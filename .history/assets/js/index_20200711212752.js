@@ -32,7 +32,6 @@ function settingBackground(color){
 
 function draw(){
   stroke(255);
-  strokeWeight(10);
   if(mouseIsPressed){
     line(mouseX, mouseY, pmouseX, pmouseY)
   }
