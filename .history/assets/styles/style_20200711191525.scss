@@ -54,7 +54,7 @@ $button-bg-color: #1e59fd;
             height: 30px;
             width: 100px;
             border: none;
-            background-color: $button-bg-color;
+            background-color: var(--button-bg-color);
             color: var(--button-text-color);
             &:hover{
                 cursor: pointer;

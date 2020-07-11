@@ -1,7 +1,7 @@
 :root {
   --header-bg-color: rgb(9, 192, 248);
   --header-text-color: #000;
-  --button-bg-color: rgb(9, 9, 245);
+  --button-bg-color: #1e59fd;
   --button-text-color: #fff;
 }
 
@@ -76,12 +76,12 @@
   height: 30px;
   width: 100px;
   border: none;
-  background-color: var(--button-bg-color);
+  background-color: #1e59fd;
   color: var(--button-text-color);
 }
 
 .sketchbook__header .sketchbook__buttons .sketchbook__button:hover {
   cursor: pointer;
-  background-color: #990000;
+  background-color: #0231b3;
 }
 /*# sourceMappingURL=style.css.map */

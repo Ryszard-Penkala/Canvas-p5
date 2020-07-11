@@ -1,9 +1,7 @@
-$button-bg-color: #1e59fd;
-
 :root {
     --header-bg-color: rgb(9, 192, 248);
     --header-text-color: #000;
-    --button-bg-color: #1e59fd;
+    --button-bg-color: #00ff00;
     --button-text-color: #fff;
 }
 
@@ -54,11 +52,11 @@ $button-bg-color: #1e59fd;
             height: 30px;
             width: 100px;
             border: none;
-            background-color: $button-bg-color;
+            background-color: var(--button-bg-color);
             color: var(--button-text-color);
             &:hover{
                 cursor: pointer;
-                background-color: darken($button-bg-color, 20)
+                background-color: darken(var(--button-bg-color), $amount: 20)
             }
         }
     }
