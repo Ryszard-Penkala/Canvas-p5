@@ -13,7 +13,6 @@ const fileFormat = 'jpg';
 const dataCanvas = document.querySelector(UiSelectors.dataCanvas);
 const dataClear = document.querySelector(UiSelectors.dataClear);
 const dataSave = document.querySelector(UiSelectors.dataSave);
-const dataPencilSize = document.querySelector(UiSelectors.dataPencilSize);
 
 dataPencilSize.addEventListener("change", ()=>{
   strokeSize = dataPencilSize.value;
@@ -39,7 +38,7 @@ function settingBackground(color){
 
 function draw(){
   stroke(0);
-  strokeWeight(strokeSize);
+  strokeWeight(10);
   if(mouseIsPressed){
     line(mouseX, mouseY, pmouseX, pmouseY)
   }
