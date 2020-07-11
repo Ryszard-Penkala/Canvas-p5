@@ -5,8 +5,6 @@ const UiSelectors = {
 }
 
 let canvas = null;
-const fileName = 'myCanvas';
-const fileFormat = 'jpg';
 const dataCanvas = document.querySelector(UiSelectors.dataCanvas);
 const dataClear = document.querySelector(UiSelectors.dataClear);
 const dataSave = document.querySelector(UiSelectors.dataSave);
@@ -17,7 +15,7 @@ dataClear.addEventListener("click", ()=>{
 })
 
 dataSave.addEventListener("click", ()=>{
-  saveCanvas(canvas, fileName, fileFormat);
+
 })
 
 
