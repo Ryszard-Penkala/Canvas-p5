@@ -9,21 +9,20 @@ const dataCanvas = document.querySelector(UiSelectors.dataCanvas);
 const dataClear = document.querySelector(UiSelectors.dataClear);
 const dataSave = document.querySelector(UiSelectors.dataSave);
 
+function settingBackground(color){
+  background(color);
+}
 
 dataClear.addEventListener("click", ()=>{
-  settingBackground(100);
+  canvas.settingBackground(100);
 })
 
 
 
 function setup() {
   canvas = createCanvas(dataCanvas.offsetWidth, dataCanvas.offsetHeight);
-  settingBackground(100);
+  canvas.background(100);
   canvas.parent(dataCanvas);
-}
-
-function settingBackground(color){
-  canvas.background(color);
 }
 
 function draw(){

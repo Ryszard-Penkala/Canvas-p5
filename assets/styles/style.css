@@ -84,4 +84,9 @@
   cursor: pointer;
   background-color: #0231b3;
 }
+
+.sketchbook__canvas {
+  width: 100vw;
+  height: calc(100vh - 62px);
+}
 /*# sourceMappingURL=style.css.map */

@@ -16,7 +16,6 @@ $button-bg-color: #1e59fd;
     box-sizing: border-box;
 }
 
-
 .sketchbook__header{
     width: 100%;
     padding: 10px;
@@ -67,6 +66,6 @@ $button-bg-color: #1e59fd;
 
 .sketchbook__canvas{
     width: 100vw;
-    height: calc(100vh - 62px);
+    height: 80ch;
 }
 
