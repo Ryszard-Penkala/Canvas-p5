@@ -6,9 +6,8 @@ const UiSelectors = {
   dataPencilColor : `[data-pencil-color-picker]`,
   dataBgColor : `[data-bg-color-picker]`,
 }
+let strokeSize = dataPencilSize.value;
 let canvas = null;
-let strokeSize = null;
-let backgroundColor = 100
 const fileName = 'myCanvas';
 const fileFormat = 'jpg';
 const dataCanvas = document.querySelector(UiSelectors.dataCanvas);
@@ -17,13 +16,11 @@ const dataSave = document.querySelector(UiSelectors.dataSave);
 const dataPencilSize = document.querySelector(UiSelectors.dataPencilSize);
 
 dataPencilSize.addEventListener("change", ()=>{
-  settingStrokeSize(dataPencilSize.value);
+  strokeSize = dataPencilSize.value;
 })
 
 dataClear.addEventListener("click", ()=>{
-  dataPencilSize.value = 10;
-  backgroundColor = 100;
-  setup();
+  settingBackground(100);
 })
 
 dataSave.addEventListener("click", ()=>{
@@ -32,13 +29,8 @@ dataSave.addEventListener("click", ()=>{
 
 function setup() {
   canvas = createCanvas(dataCanvas.offsetWidth, dataCanvas.offsetHeight);
-  settingBackground(backgroundColor);
+  settingBackground(100);
   canvas.parent(dataCanvas);
-  settingStrokeSize(dataPencilSize.value);
-}
-
-function settingStrokeSize(size){
-  canvas.strokeWeight(size);
 }
 
 function settingBackground(color){
@@ -47,7 +39,7 @@ function settingBackground(color){
 
 function draw(){
   stroke(0);
-  settingStrokeSize(strokeSize);
+  strokeWeight(strokeSize);
   if(mouseIsPressed){
     line(mouseX, mouseY, pmouseX, pmouseY)
   }

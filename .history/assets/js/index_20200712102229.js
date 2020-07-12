@@ -6,8 +6,8 @@ const UiSelectors = {
   dataPencilColor : `[data-pencil-color-picker]`,
   dataBgColor : `[data-bg-color-picker]`,
 }
-let canvas = null;
 let strokeSize = null;
+let canvas = null;
 let backgroundColor = 100
 const fileName = 'myCanvas';
 const fileFormat = 'jpg';
@@ -22,7 +22,7 @@ dataPencilSize.addEventListener("change", ()=>{
 
 dataClear.addEventListener("click", ()=>{
   dataPencilSize.value = 10;
-  backgroundColor = 100;
+  backgroundColor = 100
   setup();
 })
 
@@ -38,7 +38,7 @@ function setup() {
 }
 
 function settingStrokeSize(size){
-  canvas.strokeWeight(size);
+  strokeSize = size;
 }
 
 function settingBackground(color){
@@ -47,7 +47,7 @@ function settingBackground(color){
 
 function draw(){
   stroke(0);
-  settingStrokeSize(strokeSize);
+  strokeWeight(strokeSize);
   if(mouseIsPressed){
     line(mouseX, mouseY, pmouseX, pmouseY)
   }
