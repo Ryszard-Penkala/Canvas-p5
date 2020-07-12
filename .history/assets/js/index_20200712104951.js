@@ -23,10 +23,12 @@ const dataPencilColor = document.querySelector(UiSelectors.dataPencilColor);
 pencilColor = dataPencilColor.value;
 console.log(pencilColor);
 
+dataPencilSize.addEventListener("change", ()=>{
+  settingStrokeSize(dataPencilSize.value);
+})
 
 dataClear.addEventListener("click", ()=>{
   dataPencilSize.value = 10;
-  dataPencilColor.value = `#000000`;
   backgroundColor = 100;
   clear();
 })
@@ -39,16 +41,20 @@ function setup() {
   canvas = createCanvas(dataCanvas.offsetWidth, dataCanvas.offsetHeight);
   settingBackground(backgroundColor);
   canvas.parent(dataCanvas);
+  settingStrokeSize(dataPencilSize.value);
 }
 
+function settingStrokeSize(size){
+  canvas.strokeWeight(size);
+}
 
 function settingBackground(color){
   canvas.background(color);
 }
 
 function draw(){
-  canvas.stroke(dataPencilColor.value);
-  canvas.strokeWeight(dataPencilSize.value)
+  stroke(dataPencilColor.value);
+  settingStrokeSize(strokeSize);
   if(mouseIsPressed){
     line(mouseX, mouseY, pmouseX, pmouseY)
   }
