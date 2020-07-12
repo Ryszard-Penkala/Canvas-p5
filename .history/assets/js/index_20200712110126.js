@@ -8,6 +8,7 @@ const UiSelectors = {
 }
 
 let canvas = null;
+let backgroundColor = 100
 const fileName = 'myCanvas';
 const fileFormat = 'jpg';
 const dataCanvas = document.querySelector(UiSelectors.dataCanvas);
@@ -16,10 +17,6 @@ const dataSave = document.querySelector(UiSelectors.dataSave);
 const dataPencilSize = document.querySelector(UiSelectors.dataPencilSize);
 const dataPencilColor = document.querySelector(UiSelectors.dataPencilColor);
 const dataBgColor = document.querySelector(UiSelectors.dataBgColor);
-
-dataBgColor.addEventListener("change", ()=>{
-  canvas.background(dataBgColor.value);
-})
 
 dataClear.addEventListener("click", ()=>{
   dataPencilSize.value = 10;

@@ -8,6 +8,7 @@ const UiSelectors = {
 }
 
 let canvas = null;
+let backgroundColor = 100
 const fileName = 'myCanvas';
 const fileFormat = 'jpg';
 const dataCanvas = document.querySelector(UiSelectors.dataCanvas);
@@ -17,14 +18,11 @@ const dataPencilSize = document.querySelector(UiSelectors.dataPencilSize);
 const dataPencilColor = document.querySelector(UiSelectors.dataPencilColor);
 const dataBgColor = document.querySelector(UiSelectors.dataBgColor);
 
-dataBgColor.addEventListener("change", ()=>{
-  canvas.background(dataBgColor.value);
-})
-
 dataClear.addEventListener("click", ()=>{
   dataPencilSize.value = 10;
   dataPencilColor.value = `#000000`;
   dataBgColor.value = `#ffffff`;
+  // backgroundColor = 100;
   clear();
 })
 
@@ -35,8 +33,13 @@ dataSave.addEventListener("click", ()=>{
 function setup() {
   canvas = createCanvas(dataCanvas.offsetWidth, dataCanvas.offsetHeight);
   canvas.background(dataBgColor.value);
+  // settingBackground(backgroundColor);
   canvas.parent(dataCanvas);
 }
+
+// function settingBackground(color){
+//   canvas.background(color);
+// }
 
 function draw(){
   canvas.stroke(dataPencilColor.value);
