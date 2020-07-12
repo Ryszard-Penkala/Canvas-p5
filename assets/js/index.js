@@ -7,7 +7,6 @@ const UiSelectors = {
   dataBgColor : `[data-bg-color-picker]`,
 }
 
-let canvas = null;
 const fileName = 'myCanvas';
 const fileFormat = 'jpg';
 const dataCanvas = document.querySelector(UiSelectors.dataCanvas);
