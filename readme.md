@@ -1,3 +1,3 @@
-http://htmlpreview.github.io/?https://github.com/Ryszard-Penkala/Canvas-p5/blob/master/index.html
+https://ryszard-penkala.github.io/Canvas-p5/
 
 Canvas sketchbook with p5 library.
